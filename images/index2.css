@@ -1,0 +1,14 @@
+body {
+  background-image: linear-gradient(to right, steelblue, white);
+}
+
+h1 {
+  width: 75%;
+  font-size: 5rem;
+  background-image: url("img/pexels-raphael-loquellano-9060352.jpg");
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-size: cover;
+  /* background-clip: text; */
+  color: rgba(0, 0, 0, 0.012);
+}
