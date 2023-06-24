@@ -1,0 +1,77 @@
+:root {
+  font-size: 16px;
+  font-family: "Open Sans";
+  --text-primary: #b6b6b6;
+  --text-secondary: #ececec;
+  --bg-primary: #23232e;
+  --bg-secondary: #141418;
+}
+body {
+  margin: 0;
+  padding: 0;
+  color: black;
+  background: white;
+  min-height: 100vh;
+}
+
+main {
+  margin-left: 5rem;
+  padding: 1rem;
+}
+
+.navbar {
+  width: 5rem;
+  height: 100vh;
+  position: fixed;
+  background-color: var(--bg-primary);
+}
+/* 1e1e24 6649b8 */
+/* root targets the root element (html) of the page */
+
+html::-webkit-scrollbar-track {
+  color: red;
+}
+
+.navbar-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.link-text {
+  display: none;
+}
+.nav-item svg {
+  background-color: red;
+  color: #6649b8;
+}
+.nav-item:last-child {
+  margin-top: auto;
+}
+/* Styles the track (the background area of the scrollbar) 
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+/* Styles the thumb (the draggable handle of the scrollbar) 
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+}
+
+/* Styles the corner between the vertical and horizontal scrollbars (if present) 
+::-webkit-scrollbar-corner {
+  background-color: #f1f1f1;
+}
+
+/* Styles the buttons at the top and bottom of the vertical scrollbar (if present) 
+::-webkit-scrollbar-button {
+  background-color: #ccc;
+}
+
+/* Styles the empty space below the scrollbar and above the content 
+::-webkit-scrollbar-track-piece {
+  background-color: #f1f1f1;
+} */
