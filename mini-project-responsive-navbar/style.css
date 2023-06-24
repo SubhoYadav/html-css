@@ -51,6 +51,13 @@ html::-webkit-scrollbar-track {
 .nav-item:last-child {
   margin-top: auto;
 }
+.navbar:hover .link-text {
+  display: block;
+}
+.navbar:hover {
+  width: 16rem;
+}
+
 /* Styles the track (the background area of the scrollbar) 
 ::-webkit-scrollbar-track {
   background-color: #f1f1f1;
