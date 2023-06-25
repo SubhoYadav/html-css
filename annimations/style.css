@@ -1,0 +1,68 @@
+body {
+  height: 100vh;
+  display: flex;
+}
+
+main {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-size: 2rem;
+  width: 100%;
+}
+
+.square {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div:first-child {
+  background-color: dodgerblue;
+  /* transform: translateX(50%); */
+  transform: rotate(180deg); /* === rotateZ() */
+  /* Translates to right with a distance = 50% of the width of the element itself */
+
+  /* we can only apply a translate or a rotate and not both at a time */
+}
+
+div:nth-child(2) {
+  background-color: yellow;
+  /* transform: translateY(5rem); */
+
+  /* Translates to bottom with a distance = 50% of the width of the element itself */
+
+  transform: rotateY(40deg);
+}
+
+div:last-child {
+  background-color: limegreen;
+  /* transform: translate(-50%, 5rem); */
+
+  /* Think of rotating on X and Y axis as a card */
+  transform: rotateX(180deg);
+}
+
+/* 
+The flex-flow property is a shorthand property in CSS that combines the flex-direction and flex-wrap properties. It is used to control the flow and wrapping behavior of flex items within a flex container. The syntax for the flex-flow property is as follows:
+
+flex-flow: <flex-direction> <flex-wrap>;
+
+flex-direction>: Specifies the direction in which the flex items are laid out within the flex container. It can take one of the following values:
+
+row: Items are laid out horizontally in a row (the default).
+row-reverse: Items are laid out horizontally in a reversed order.
+column: Items are laid out vertically in a column.
+column-reverse: Items are laid out vertically in a reversed order.
+<flex-wrap>: Specifies whether the flex items should wrap to a new line or stay on the same line. It can take one of the following values:
+
+nowrap: Items are displayed in a single line (the default).
+wrap: Items wrap to multiple lines if needed.
+wrap-reverse: Items wrap to multiple lines in a reverse order
+
+*/
