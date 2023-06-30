@@ -24,6 +24,8 @@ main {
   height: 100vh;
   position: fixed;
   background-color: var(--bg-primary);
+  transition-duration: 400ms;
+  transition-property: width;
 }
 /* 1e1e24 6649b8 */
 /* root targets the root element (html) of the page */
