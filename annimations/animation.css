@@ -1,0 +1,39 @@
+@keyframes example {
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: yellow;
+  }
+}
+
+@keyframes example1 {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: yellow;
+  }
+  25% {
+    background-color: blue;
+  }
+  100% {
+    background-color: green;
+  }
+}
+
+.exp1 {
+  height: 250px;
+  width: 250px;
+  animation-name: example;
+  animation-duration: 4s;
+  background-color: red;
+}
+
+.exp2 {
+  height: 250px;
+  width: 250px;
+  animation-name: example1;
+  animation-duration: 4s;
+  background-color: red;
+}
