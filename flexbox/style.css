@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  border: 2px solid black;
+  max-width: 800px;
+  min-height: 400px;
+  margin-inline: auto;
+  display: flex;
+  /* justify-content: flex-start; */
+  /* justify-content: flex-end; */
+  /* justify-content: space-evenly; */
+  justify-content: center;
+  align-items: flex-start;
+  align-items: flex-end;
+  align-items: center;
+  /* flex-direction: row; */
+  flex-direction: row-reverse;
+  /* flex flow is a short hand for the props flex-direction and flex wrap combined togeather */
+  /* flex-wrap: wrap; */
+
+  flex-flow: row wrap;
+  gap: 1rem;
+
+  /* align-content property works similar to jsutify content except it aligns the rows  */
+  /* align-content: center; */
+  /* align-content: center; */
+  /* align-content: space-around; */
+}
+
+.box {
+  background-color: #000;
+  color: white;
+  height: 100px;
+  min-width: 100px;
+  font-size: 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  
+
+}
+
+/* 
+margin-inline-start: 10px
+margin-inline-end: 10px
+
+margin at start of the element is 10px and at end of the element is 10px
+
+*/
