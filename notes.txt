@@ -1,0 +1,16 @@
+States:
+state pseudo class usually comes into play when a user performs an action (no-aaction also viz. an un-visited link)
+
+Following are the pseudo classes related to states:
+The order of declaation of classes in this category are:
+link, visited, hover, active
+
+:link-> Used to select un-visited links
+:visited-> Used to select links that have been visited
+
+:active-> 
+
+The :active pseudo-class is used to style an element that has been “activated” either by a pointing device or by a tap on a touchscreen device. It can also be triggered by the keyboard, just like the :focus pseudo-class.
+
+
+It works very similarly to :focus, the difference being that the :active pseudo-class is an event that occurs between the mouse button being
