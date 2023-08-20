@@ -83,7 +83,7 @@ body {
 
   grid-row: 1/2;
   display: grid;
-  align-content: center;
+  /* align-content: center;
   align-content: start;
   align-content: end;
 
@@ -92,7 +92,13 @@ body {
   justify-content: center;
 
   place-content: center center;
-  place-content: center;
+  place-content: center; */
+
+  /* vertical alignment */
+  align-content: center;
+
+  /* horizontal alignment */
+  justify-content: center;
 }
 
 .box:nth-child(2) {
