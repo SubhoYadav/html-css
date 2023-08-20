@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300;1,400&family=Roboto:ital,wght@1,300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 40px;
+  font-family: "Roboto", sans-serif;
+}
+.box {
+  background-color: black;
+  color: white;
+}
+
+.container {
+  display: grid;
+  grid-auto-flow: row;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 200px 100px 200px;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* fr is a unit that is specifically used with css grids */
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 200px 100px 100px 100px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 200px 1fr 1fr;
+  /* We can also mix the two types of units */
+}
+
+/* If multiple columns have the same value we can specify them using the repeat property */
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.container {
+  grid-area: mn;
+  /* height: 500px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr 2fr); */
+
+  grid-auto-rows: 200px;
+  /* Now the rows are 200px tall */
+
+  grid-auto-rows: minmax(150px, auto);
+  row-gap: 0.2em;
+  column-gap: 0.2em;
+  gap: 0.2em 0.2em;
+  min-height: 400px;
+  /* opposite also exists as follows */
+
+  /* grid-template-rows: ; */
+  /* grid-auto-columns: ; */
+}
+
+/* Applying properties to the grid items */
+
+.box:first-child {
+  background-color: blue;
+  /* grid-column-start: 1;
+  grid-column-end: 3; */
+
+  grid-column: 1 / 3;
+
+  /* grid-row-start: 1;
+  grid-row-end: 3; */
+
+  grid-row: 1/2;
+  display: grid;
+  align-content: center;
+  align-content: start;
+  align-content: end;
+
+  justify-content: start;
+  justify-content: end;
+  justify-content: center;
+
+  place-content: center center;
+  place-content: center;
+}
+
+.box:nth-child(2) {
+  background-color: purple;
+  grid-row: 2/3;
+  grid-column: 1/4;
+}
+
+/*
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+.el {
+  background-color: rebeccapurple;
+  color: white;
+  display: grid;
+  place-content: center;
+}
+
+header {
+  grid-area: hd;
+}
+
+aside {
+  grid-area: sb;
+}
+
+footer {
+  grid-area: ft;
+}
+
+body {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-auto-rows: 75px auto 75px;
+  grid-template-areas:
+    "hd hd hd hd hd hd hd hd hd"
+    "mn mn mn mn mn mn mn sb sb"
+    "ft ft ft ft ft ft ft ft ft";
+  gap: 0.5rem;
+}

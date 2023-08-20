@@ -1,28 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- lang attribute to specify the language of the file -->
   <head>
-    <title>My First Web Page</title>
     <meta charset="UTF-8" />
-    <meta name="author" content="Subho Yadav" />
-    <meta
-      name="description"
-      content="This page contains all the code I have written in order to learn HTML"
-    />
-    <!-- Adding a fav-icon to my html page -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon" href="" />
-    <style>
-      html {
-        font-size: 22px;
-      }
-      body {
-        background-color: #333;
-        color: whitesmoke;
-      }
-    </style>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Grids</title>
   </head>
   <body>
-    <h1>Hello World</h1>
-    <p>Mastering HTML through Dave Gray's html course!</p>
+    <header class="header el"><h1>Header</h1></header>
+    <main class="container">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+      <div class="box">6</div>
+    </main>
+    <aside class="el">Sidebar</aside>
+    <footer class="el">Footer</footer>
   </body>
 </html>
