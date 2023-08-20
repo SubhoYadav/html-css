@@ -1,0 +1,48 @@
+.block {
+  width: 20vw;
+  height: 20vw;
+  background-color: #000;
+  color: #fff;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+  margin-right: 25px;
+}
+
+.clear {
+  clear: both;
+}
+
+section {
+  background-color: bisque;
+  padding: 15px;
+
+  /* comment the following property and observe the change */
+  /* overflow: auto; */
+  display: flow-root;
+}
+
+/* 
+float: left;
+float: right;
+float takes the element out of the normal flow of the document
+*/
+
+/* clear nullifies the effect of float */
+
+/* 
+clear: left;
+clear: right;
+clear: both;
+*/
+
+/* Since the element is taken out of the normal flow of the document the following css will not produce desirable results */
+/* 
+p {
+  margin-left: 25px;
+} */
